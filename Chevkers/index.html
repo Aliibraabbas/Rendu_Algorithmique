@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Chekers</title>
+</head>
+<body>
+    <div class="container">
+        <div class="next-player counter">
+            <div class="occupied whitePiece" id="next-player"></div>
+            <h1>Player turn</h1>
+          </div>
+          <div class="game" id="game"></div>
+          <div class="counter">
+            <div>
+              <div class="occupied whitePiece"></div>
+              <span id="white-player-count-pieces"></span>
+            </div>
+            <div>
+              <div class="occupied blackPiece"></div>
+              <span id="black-player-count-pieces"></span>
+            </div>
+          </div>
+    </div>
+
+    <div id="Modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>The <strong id="winner"></strong> Player is the winner !!</p>
+                <p> <span id="loser"></span>, whould you take your revenge ???</p>
+  
+                <div class="btn-container">
+                  <button class="btn" onclick="location.reload()">Yes </button>
+                  <button class="btn" onclick="modalClose()">No</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
